@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from '../assets/img/logo.svg';
 import navIcon1 from '../assets/img/nav-icon1.svg';
-import navIcon2 from '../assets/img/nav-icon2.svg';
-import navIcon3 from '../assets/img/nav-icon3.svg';
+import github from '../assets/img/github.svg';
+import paper from '../assets/img/paper.png';
 import { HashLink } from 'react-router-hash-link';
 import { BrowserRouter as Router } from "react-router-dom";
 
@@ -50,9 +50,18 @@ export const NavBar = () => {
             <span className="navbar-text">
               <div className="social-icon">
                 {/* Provide actual URLs or use placeholders */}
-                <a href="javascript:void(0)"><img src={navIcon1} alt="" /></a>
-                <a href="javascript:void(0)"><img src={navIcon2} alt="" /></a>
-                <a href="javascript:void(0)"><img src={navIcon3} alt="" /></a>
+                  {/* LinkedIn */}
+            <a href="https://www.linkedin.com/in/kavisha-mathur-0524741b0/" target="_blank" rel="noopener noreferrer">
+              <img src={navIcon1} alt="LinkedIn" />
+            </a>
+            {/* GitHub */}
+            <a href="https://github.com/Kavisha4" target="_blank" rel="noopener noreferrer">
+              <img src={github} alt="GitHub" />
+            </a>
+            {/* Google Drive */}
+            <a href="https://drive.google.com/drive/folders/1QEYzKrV91UiTiK6tdLMKeRUUcCA5BrP9?usp=sharing" target="_blank" rel="noopener noreferrer">
+              <img src={paper} alt="Google Drive" />
+            </a>
               </div>
               <HashLink to='#connect'>
                 <button className="vvd"><span>Let’s Connect</span></button>

@@ -1,27 +1,29 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCards } from "./ProjectCards";
-import projImg1 from "../assets/img/ProjectsPictureBehind.jpg";
-import projImg2 from "../assets/img/ProjectImage2.png";
-import projImg3 from "../assets/img/ProjectsPictureBehind.jpg";
+// import projImg1 from "../assets/img/ProjectsPictureBehind.jpg";
+// import projImg2 from "../assets/img/ProjectImage2.png";
+// import projImg3 from "../assets/img/ProjectsPictureBehind.jpg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-import blue from "../assets/img/bluewall.jpg";
-import pink from "../assets/img/pink wall.jpg";
-import purple from "../assets/img/purple wall.jpg";
-import red from "../assets/img/red wall.jpg";
-import yellow from "../assets/img/yellow wall.jpg";
-import green from "../assets/img/green wall.jpg";
+import laptop from "../assets/img/laptop.jpg"
+import blue2 from "../assets/img/blue2.jpg"
+import blue3 from "../assets/img/exp pic.jpg";
+import blue4 from "../assets/img/blue4.jpg";
+import blue5 from "../assets/img/blue5.jpg";
+
+import laptop2 from "../assets/img/laptop2.jpg"
 
 
-export const Projects = () => {
+
+export const Experience = () => {
   const projects = [
-    { title: "Recommender System for Creative Professionals", description: "Used AI/ML, Flask and HTML CSS for website", imgUrl: blue  },
-    { title: "KYC using Blockchain", description: "Using IPFS, Ganache, NodeJS to implement", imgUrl: purple},
-    { title: "Detection of Dyslexia", description: "Data analytics project to identify if a person has dyslexia", imgUrl: yellow},
-    { title: "VideoStreaming Website", description: "HTML, CSS and JS", imgUrl: red},
-    { title: "Kayak", description: "Satellite image processing, neural networks and data science, for sustainable development", imgUrl: green },
-    { title: "Apple Developer Groups Website", description: "Contributed to the Apple developers group website.", imgUrl: pink },
+    { title: "Indian Institute of Science", description: " C++ Developer", imgUrl: blue3 },
+    { title: "JP Morgan and Chase", description: "Project Management, Agile Developer : Virtual Internship ", imgUrl: laptop },
+    { title: "Amazon ML Summer School ", description: "Core ML and DL concepts", imgUrl: blue2},
+    { title: "Wiingy", description: "Technical Content Engineer ", imgUrl: blue5 },
+    { title: "Seminar Room", description: "Automation, Outreach and Project Management", imgUrl: blue4},
+    { title: "Centre for Data Science and Machine Learning", description: "Contributed to the Apple developers group website.", imgUrl: laptop2 },
   ];
 
   return (
@@ -32,7 +34,7 @@ export const Projects = () => {
             <TrackVisibility>
               {({ isVisible }) => (
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                  <h2>Projects</h2>
+                  <h2>Experiences</h2>
                   <p>
                   My Github link can be found on the top right
                   </p>
@@ -57,11 +59,11 @@ export const Projects = () => {
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
-                        <p>You can find these projects along with their source code on my Github</p>
+                        <p>You can find these experiences on my LinkedIn</p>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
                         <p>
-                       Find my Github and LinkedIn on the top right Corner
+                         Check out my LinkedIn
                         </p>
                       </Tab.Pane>
                     </Tab.Content>
